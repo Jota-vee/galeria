@@ -1,0 +1,36 @@
+{% load static %}
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Home</title>
+</head>
+<body>
+    <section id="menu">
+        <h1 id="pontuacao"></h1>
+    </section>
+    <section id="jogo">
+        <img src="{% static 'img/img.jpg' %}" id="img1" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img2" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img3" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img4" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img5" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img6" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img7" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img8" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img9" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img10" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img11" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img12" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img13" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img14" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img15" onclick="VirarImgs(this.id)">
+        <img src="{% static 'img/img.jpg' %}" id="img16" onclick="VirarImgs(this.id)">
+    </section>
+    <h1><a href="{% url 'about' %}">Sobre</a></h1>
+</body>
+<script>
+    const IMG_PATH = "{% static 'img/' %}";
+</script>
+<script src="{% static 'js/script.js' %}"></script>
+</html>
